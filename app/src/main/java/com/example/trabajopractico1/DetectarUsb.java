@@ -13,7 +13,7 @@ public class DetectarUsb extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Toast.makeText(context,"Se desconecto el USB, llamar al 911",Toast.LENGTH_LONG).show();
         Intent i = new Intent(Intent.ACTION_CALL);
-        i.setData(Uri.parse("tel:" + "911"));
+        i.setData(Uri.parse("tel: 911"));
         context.startActivity(i);
     }
 
